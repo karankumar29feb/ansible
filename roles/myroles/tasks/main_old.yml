@@ -1,0 +1,12 @@
+---    
+- name: Installing vim
+  yum: name=vim state=latest
+
+- name: installing httpd
+  yum: name=httpd state=latest
+
+- name: starting httpd
+  service: name=httpd state=started
+
+- name: installing git
+  yum: name=git state=latest
