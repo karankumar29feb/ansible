@@ -1,0 +1,6 @@
+- name: vim install
+  hosts: all
+  tasks:
+    - name: install vim
+      yum: name=vim state=absent
+#      yum: name=vim state=latest
